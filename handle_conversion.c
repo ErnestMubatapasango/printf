@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _printf - Printf function
+ * handle_conversion - Printf function
  * @format: format.
  * Return: Printed chars.
  */
-int _printf(const char *format, ...)
+int handle_conversion(const char *format, ...)
 {
 va_list args;
 int count = 0;
