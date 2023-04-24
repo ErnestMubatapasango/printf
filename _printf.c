@@ -32,10 +32,10 @@ int _printf(const char *format, ...)
 		else
 		{
 			print_hedge(hedge, &hed_ind);
-			flags = get_flags(format, &i);
-			width = get_width(format, &i, list);
-			precision = get_precision(format, &i, list);
-			size = get_size(format, &i);
+			flags = handle_flags(format, &i);
+			width = handle_width(format, &i, list);
+			precision = handle_precision(format, &i, list);
+			size = handle_size(format, &i);
 			++i;
 			printed = handle_print(format, &i, list, hedge,
 				flags, width, precision, size);
