@@ -57,7 +57,7 @@ int _printf(const char *format, ...)
  * @hedge: Array of chars
  * @hed_ind: Index at which to add next char, represents the length.
  */
-void print_buffer(char hedge[], int *hed_ind)
+void print_hedge(char hedge[], int *hed_ind)
 {
 	if (*hed_ind > 0)
 		write(1, &hedge[0], *hed_ind);
