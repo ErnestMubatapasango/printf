@@ -20,7 +20,7 @@ int print_unsigned(va_list types, char hedge[],
 	num = convert_size_unsgnd(num, size);
 
 	if (num == 0)
-		buffer[i--] = '0';
+		hedge[i--] = '0';
 
 	hedge[HED_SIZE - 1] = '\0';
 
